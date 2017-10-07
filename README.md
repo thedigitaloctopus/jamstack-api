@@ -1,6 +1,10 @@
 # jamstack-api
 API for a JAMstack tutorial!
 
+## Requirements
+npm install --save express mongodb body-parser
+npm install --save-dev nodemon
+
 ## POST
 Need 'jam' and 'msrp' keys in the body of the request (x-www-form-urlencoded)
 

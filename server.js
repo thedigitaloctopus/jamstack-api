@@ -14,6 +14,6 @@ MongoClient.connect(db.url, (err, database) => {
     require('./app/routes')(app, database);
 
     app.listen(port, () => {
-        console.log('We are live on ' + port);
+        console.log('https://localhost:' + port);
     });
 })
