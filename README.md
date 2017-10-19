@@ -4,6 +4,12 @@ API for a JAMstack tutorial!
 ## Requirements
 npm install --save express mongodb body-parser && npm install --save-dev nodemon
 
+```config/db.js
+module.exports = {
+  url : YOUR URL HERE
+};
+```
+
 ## POST
 Need 'jam' and 'msrp' keys in the body of the request (x-www-form-urlencoded)
 
