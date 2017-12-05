@@ -1,7 +1,7 @@
 {
   "name": "jamstack-api",
   "version": "1.0.0",
-  "description": "",
+  "description": "API for types of jam",
   "main": "index.js",
   "scripts": {
     "dev": "nodemon server.js"
