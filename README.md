@@ -17,7 +17,7 @@ $ npm start
 $ docker run --name jamstack-db -d -p 27017:27017 mongo:latest mongod
 
 # Start Docker Image for API
-$ docker run --name jamstack-api -p 8008:8008 --link jamstack-db:mongo -d nsuave/jamstack-api
+$ docker run --name jamstack-api -d -p 8008:8008 --link jamstack-db:mongo nsuave/jamstack-api
 ```
 
 ## POST
