@@ -4,7 +4,7 @@ API for a JAMstack tutorial!
 ## Quick Start - Local
 ```
 # Start MongoDB
-$ mongo
+$ mongod --dbpath /path/to/db/ 
 
 # Install Dependencies and Start API
 $ npm install
