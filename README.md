@@ -1,19 +1,23 @@
 # jamstack-api
 API for a JAMstack tutorial!
 
-## Requirements
+## Quick Start - Local
+```
+# Start MongoDB
+$ mongo
 
-config/db.js:
-```
-module.exports = {
-  url : "mongodb://YOUR_URL_HERE:YOUR_PORT_HERE"
-};
-```
-
-## Quick Start
-```
+# Install Dependencies and Start API
 $ npm install
 $ npm start
+```
+
+## Quick Start - Docker
+```
+# Start MongoDB Container
+$ docker run --name jamstack-db -d -p 27017:27017 mongo:latest mongod
+
+# Start Docker Image for API
+$ docker run --name jamstack-api -p 8008:8008 --link jamstack-db:mongo -d nsuave/jamstack-api
 ```
 
 ## POST
