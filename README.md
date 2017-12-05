@@ -2,13 +2,18 @@
 API for a JAMstack tutorial!
 
 ## Requirements
-npm install --save express mongodb body-parser && npm install --save-dev nodemon
 
 config/db.js:
 ```
 module.exports = {
-  url : YOUR URL HERE
+  url : "mongodb://YOUR_URL_HERE:YOUR_PORT_HERE"
 };
+```
+
+## Quick Start
+```
+$ npm install
+$ npm start
 ```
 
 ## POST
