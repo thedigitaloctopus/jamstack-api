@@ -1,5 +1,6 @@
 # jamstack-api
 API for a JAMstack tutorial!
+https://www.nicosuave.net/post/jamstack-node-api/
 
 ## Quick Start - Local
 ```
