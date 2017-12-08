@@ -8,6 +8,8 @@ https://www.nicosuave.net/post/jamstack-node-api/
 $ mongod --dbpath /path/to/db/ 
 
 # Install Dependencies and Start API
+$ git clone https://github.com/nsuave/jamstack-api.git
+$ cd jamstack-api
 $ npm install
 $ npm start
 ```
