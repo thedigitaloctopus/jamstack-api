@@ -17,7 +17,7 @@ $ npm start
 ## Quick Start - Docker
 ```
 # Start MongoDB Container
-$ docker run --name jamstack-db -d -p 27017:27017 mongo:latest mongod
+$ docker run --name jamstack-db -d -p 27017:27017 mongo:latest mongod --bind_ip_all
 
 # Start Docker Image for API
 $ docker run --name jamstack-api -d -p 8008:8008 --link jamstack-db:mongo nsuave/jamstack-api
