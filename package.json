@@ -4,7 +4,7 @@
   "description": "API for types of jam",
   "main": "index.js",
   "scripts": {
-    "dev": "nodemon server.js"
+    "test": "mocha"
   },
   "repository": {
     "type": "git",
@@ -22,6 +22,9 @@
     "mongodb": "^2.2.31"
   },
   "devDependencies": {
+    "chai": "^4.2.0",
+    "chai-http": "^4.3.0",
+    "mocha": "^6.1.4",
     "nodemon": "^1.12.1"
   }
 }

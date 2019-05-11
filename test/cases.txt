@@ -1,0 +1,62 @@
+POSITIVE TESTING
+GET /
+    200
+    expect empty array
+POST strawberry 5
+    grab id
+    grab price
+POST grape 3
+    grab id
+    grab price
+GET strawberry id
+    validate ID match
+    validate price match
+GET grape id
+    validate ID match
+    validate price match
+GET /
+    expect 2 elements
+    validate id and price matches for both elements
+PUT strawberry 4
+    grab updated price
+GET strawberry id
+    validate updated price
+GET /
+    expect 2 elements
+    validate id and price matches for both elements
+DELETE strawberry id
+    expect 200
+GET /
+    expect 1 element
+    validate id and price match
+DELETE grape id
+    expect 200
+GET /
+    expect empty array
+
+
+NEGATIVE TESTING
+GET
+requires:
+    nothing
+
+GET:id
+requires:
+    uri: id
+
+POST
+requires:
+    format: x-www-form-urlencoded
+    body: jam key
+    body: msrp key
+
+PUT
+requires:
+    uri: id
+    format: x-www-form-urlencoded
+    body: jam key
+    body: msrp key
+
+DELETE
+requires:
+    uri: id

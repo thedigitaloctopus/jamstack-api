@@ -17,3 +17,5 @@ MongoClient.connect(db.url, (err, database) => {
         console.log('https://localhost:' + port);
     });
 })
+
+module.exports = app; //for testing
